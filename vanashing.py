@@ -35,9 +35,7 @@ def two_point(width, height, horizon):
     img.save(filename)
     os.system("lp " + filename)
 
-    # img.show()
-    # filename
-    # img.save('2_point.png')
 
-for _ in [.1, .9, .3, .6]:
-    two_point(1920, 1080, _)
+if __name__ == "__main__":  
+    for _ in [.1, .9, .3, .6]:
+        two_point(1920, 1080, _)
